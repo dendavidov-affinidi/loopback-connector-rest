@@ -8,8 +8,6 @@
 module.exports = require('./lib/rest-builder');
 
 const connector = require('./lib/rest-connector');
-const SG = require('strong-globalize');
-SG.SetRootDir(__dirname);
 
 module.exports.RestConnector = connector.RestConnector;
 module.exports.initialize = connector.initialize;
